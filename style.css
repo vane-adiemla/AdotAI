@@ -5,12 +5,14 @@ body {
 }
 .container {
   margin: 60px auto;
+  width: 100%;
   max-width: 600px;
-  background: #fff; /* Fundo branco, sem amarelo */
+  background: #fff;
   border-radius: 16px;
-  box-shadow: 2px 4px 16px #e5e5e5; /* Sombra suave e cinza */
-  padding: 36px;
+  box-shadow: 2px 4px 16px #e5e5e5;
+  padding: 36px 16px; /* padding lateral para evitar que encoste */
   text-align: center;
+  box-sizing: border-box; /* garante que padding não some da largura */
 }
 h1 {
   color: #7CB518; /* Verde folha */
