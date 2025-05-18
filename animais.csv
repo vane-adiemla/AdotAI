@@ -1,0 +1,31 @@
+ID,Nome,Espécie,Sexo,Idade (meses),Porte,Castrado,Vacinas em dia,Disponível para adoção,Observações
+1,Thor,Cachorro,Macho,12,Médio,Sim,Sim,Sim,Muito brincalhão
+2,Lua,Gato,Fêmea,8,,Sim,Sim,Sim,Gosta de crianças
+3,Nina,Cachorro,Fêmea,24,Grande,Sim,Sim,Sim,Calma e carinhosa
+4,Zeca,Gato,Macho,18,,Sim,Não,Sim,Precisa de cuidados especiais
+5,Bela,Cachorro,Fêmea,6,Pequeno,Sim,Sim,Sim,Adapta-se bem a apartamento
+6,Rex,Gato,Macho,36,,Sim,Sim,Não,Já adotado recentemente
+7,Mel,Cachorro,Fêmea,14,Médio,Sim,Sim,Sim,Muito sociável
+8,Bob,Gato,Macho,10,,Sim,Não,Sim,Gosta de outros animais
+9,Cacau,Gato,Fêmea,20,,Sim,Sim,Sim,Ideal para família
+10,Tico,Cachorro,Macho,7,Pequeno,Sim,Sim,Sim,Necessita de treinamento
+11,Simba,Gato,Macho,14,,Sim,Sim,Sim,Muito ativo e curioso
+12,Mimi,Gato,Fêmea,9,,Sim,Sim,Sim,Carinhosa e tranquila
+13,Fred,Cachorro,Macho,22,Médio,Sim,Sim,Sim,Gosta de correr no parque
+14,Lola,Gato,Fêmea,18,,Sim,Sim,Sim,Independente e esperta
+15,Max,Cachorro,Macho,30,Grande,Sim,Sim,Sim,Leal e protetor
+16,Nina,Gato,Fêmea,12,,Sim,Sim,Sim,Se adapta fácil
+17,Toby,Cachorro,Macho,16,Médio,Sim,Sim,Sim,Muito brincalhão
+18,Lili,Gato,Fêmea,11,,Sim,Sim,Sim,Gosta de colo
+19,Rocky,Cachorro,Macho,24,Grande,Sim,Sim,Sim,Forte e amigável
+20,Gigi,Gato,Fêmea,8,,Sim,Sim,Sim,Quietinha e carinhosa
+21,Bilu,Cachorro,Macho,15,Médio,Sim,Sim,Sim,Ótimo para famílias
+22,Mel,Gato,Fêmea,7,,Sim,Sim,Sim,Gosta de brincar com bolinhas
+23,Spike,Cachorro,Macho,20,Grande,Sim,Sim,Sim,Adora passear
+24,Sissi,Gato,Fêmea,13,,Sim,Sim,Sim,Muito calma
+25,Jack,Cachorro,Macho,10,Médio,Sim,Sim,Sim,Esperto e obediente
+26,Kitty,Gato,Fêmea,6,,Sim,Sim,Sim,Gosta de carinho
+27,Rex,Cachorro,Macho,18,Grande,Sim,Sim,Sim,Forte e protetor
+28,Luna,Gato,Fêmea,14,,Sim,Sim,Sim,Gosta de ficar na janela
+29,Thor,Cachorro,Macho,25,Médio,Sim,Sim,Sim,Muito energético
+30,Zoe,Gato,Fêmea,9,,Sim,Sim,Sim,Amigável com outros gatos
