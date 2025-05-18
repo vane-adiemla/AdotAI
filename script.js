@@ -11,6 +11,13 @@ function addMessage(text, sender = 'bot') {
   chatbox.scrollTop = chatbox.scrollHeight;
 }
 
+// Seleciona todos os botões de pergunta rápida
+document.querySelectorAll('.quick-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    input.value = btn.textContent;
+    sendBtn.click();
+  });
+
 // Respostas simples para simular conversa
 function getBotReply(userText) {
   userText = userText.toLowerCase();
