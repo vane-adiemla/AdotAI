@@ -1,18 +1,20 @@
 body {
-  background: #FBF6EF; /* Bege suave */
+  background: #FBF6EF;
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
+  min-height: 100vh;
 }
+
 .container {
-  margin: 60px auto;
-  width: 100%;
-  max-width: 400px;
   background: #fff;
   border-radius: 16px;
   box-shadow: 2px 4px 16px #e5e5e5;
-  padding: 36px 16px; /* padding lateral para evitar que encoste */
+  padding: 36px 24px;
   text-align: center;
-  box-sizing: border-box; /* garante que padding não some da largura */
+  width: 100%;
+  max-width: 700px;  /* ajuste aqui para o tamanho desejado */
+  margin: 40px auto; /* mantém centralizado horizontalmente */
+  box-sizing: border-box; /* garante que padding não ultrapasse a largura */
 }
 h1 {
   color: #7CB518; /* Verde folha */
