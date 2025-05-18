@@ -1,4 +1,4 @@
-# 🐾 Agente de Adoção Responsável de Animais (IA Gemini)
+# 🐾 AdotAÍ - Agente de Adoção Responsável de Animais (IA Gemini)
 
 Este projeto é um agente de IA criado para ajudar ONGs, protetores independentes e pessoas interessadas em adotar animais de forma responsável. O agente faz a triagem de adotantes, responde dúvidas sobre adoção, vacinação, castração, guarda responsável e outros temas.
 
