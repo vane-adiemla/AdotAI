@@ -1,104 +1,134 @@
 body {
-  background: #FBF6EF;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  min-height: 100vh;
+    background: #fcfaf5; /* Very light cream background for the page */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Add some padding around the container */
 }
 
 .container {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 2px 4px 16px #e5e5e5;
-  padding: 36px 24px;
-  text-align: center;
-  width: 100%;
-  max-width: 700px;      /* ou outro valor desejado */
-  margin: 40px auto 0 auto;
-  box-sizing: border-box;
+    margin: 40px auto;
+    max-width: 600px; 
+    background: #ffffff; /* White background for the chat card */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    padding: 30px 35px; /* Adjusted padding */
+    text-align: center;
 }
+
 h1 {
-  color: #7CB518; /* Verde folha */
-  font-size: 2.2em;
-  margin-bottom: 8px;
+    color: #8CC63F; /* Brighter green to match image */
+    font-size: 2.4em;
+    margin-bottom: 15px;
 }
-.subtitle {
-  color: #5C715E;
-  font-size: 1.2em;
-  margin-bottom: 20px;
+
+.intro-text {
+    color: #707070; /* Dark gray for descriptive text */
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0 10px; 
 }
-.ask-prompt {
-  color: #6b944d;
-  font-size: 1.1em;
-  margin-bottom: 12px;
-  font-weight: 500;
+
+.cta-text {
+    color: #777; /* A slightly less prominent color for this instruction */
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
-.quick-questions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 18px;
-}
-.quick-btn {
-  background: #FCFCFC; /* Quase branco */
-  color: #3A5A40;
-  border: 1.5px solid #E0E0E0;
-  border-radius: 28px;
-  padding: 8px 16px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.2s, border 0.2s;
-  font-weight: bold;
-  box-shadow: 0 1px 2px #ececec;
-}
-.quick-btn:hover {
-  background: #F6F6EF;
-  border: 1.5px solid #7CB518;
-}
+
 .chatbox {
-  background: #fff;
-  border-radius: 12px;
-  min-height: 300px;
-  max-height: 400px;
-  width: 100%;
-  max-width: 100%;
-  padding: 16px;
-  text-align: left;
-  box-shadow: 1px 2px 10px #E5E5E5;
-  border: 1.5px solid #E0E0E0;
-  margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #f0f0f0; /* Very light border for the chatbox */
+    border-radius: 8px; 
+    min-height: 300px; /* Adjusted height */
+    max-height: 450px;
+    width: 100%;           
+    overflow-y: auto;
+    margin: 25px 0; /* More vertical margin */
+    padding: 15px;
+    text-align: left;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.04); /* Subtle inner shadow */
 }
+
+.quick-questions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+    margin-bottom: 25px; /* Space before the chatbox */
+}
+
+.quick-btn {
+    background: #f7f7f7; /* Light gray background */
+    color: #555555;      /* Dark gray text */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 20px; /* Pill shape */
+    padding: 9px 18px;  /* Adjusted padding */
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-weight: 500; /* Medium weight */
+}
+
+.quick-btn:hover {
+    background: #e9e9e9;
+    border-color: #d0d0d0;
+}
+
+.message {
+    margin-bottom: 12px;
+    padding: 10px 14px; /* Slightly more padding */
+    border-radius: 12px; /* More rounded messages */
+    line-height: 1.4;
+    max-width: 80%; /* Max width for messages */
+    word-wrap: break-word; /* Ensure long words break */
+}
+
 .message.user {
-  text-align: right;
-  color: #3A5A40;
+    background-color: #e6f2ff; /* Light blue for user */
+    color: #333;
+    text-align: right;
+    margin-left: auto;
 }
+
 .message.bot {
-  text-align: left;
-  color: #A98467;
+    background-color: #f1f1f1; /* Light gray for bot */
+    color: #333;
+    text-align: left;
+    margin-right: auto;
 }
+
 .input-area {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px; /* Space above input area */
 }
+
 #user-input {
-  flex: 1;
-  padding: 10px;
-  font-size: 1em;
-  border-radius: 6px;
-  border: 1.5px solid #7CB518;
-  background: #E9F5DB;
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    background-color: #f0f7f0; /* Very light green background for input */
 }
+
+#user-input::placeholder {
+    color: #888; /* Lighter placeholder text */
+}
+
 #send-btn {
-  padding: 10px 18px;
-  background: #7CB518;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.2s;
+    padding: 12px 22px;
+    background: #8CC63F; /* Matching green */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
 }
+
 #send-btn:hover {
-  background: #3A5A40;
+    background: #7ab430; /* Darker green on hover */
 }
