@@ -92,7 +92,7 @@ quickBtns.forEach(button => {
     // Option 2: Directly send the question as if user typed it
     addMessage(question, 'user'); // Show the question as user message
      sendBtn.disabled = true; // DESABILITA o botão Enviar
-    userInput.disabled = true; // DESABILITA o campo de input
+        userInput.disabled = true; // DESABILITA o campo de input
     quickBtns.forEach(btn => btn.disabled = true); // DESABILITA todos os botões rápidos
 
     setTimeout(() => { 
@@ -103,10 +103,9 @@ quickBtns.forEach(button => {
         quickBtns.forEach(btn => btn.disabled = false); // REABILITA os botões rápidos
         userInput.focus(); 
     }, 500 + Math.random() * 400);
-  });
-});
-    addMessage("Oi! Eu sou o AdotAÍ, seu assistente virtual para adoção de animais. Como posso te ajudar hoje? Você pode clicar em uma das perguntas rápidas ou digitar sua dúvida!", 'bot');
-userInput.focus(); // Coloca o cursor piscando no campo de input automaticamente 
+
+        addMessage("Oi! Eu sou o AdotAÍ, seu assistente virtual para adoção de animais. Como posso te ajudar hoje? Você pode clicar em uma das perguntas rápidas ou digitar sua dúvida!", 'bot');
+        userInput.focus(); // Coloca o cursor piscando no campo de input automaticamente 
   });
 });
 
