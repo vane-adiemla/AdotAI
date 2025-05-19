@@ -23,7 +23,7 @@ function getBotReply(userText) {
   if (userText === "como funciona a adoção?") {
     return "O processo de adoção geralmente envolve uma entrevista, preenchimento de formulário, visita à casa do adotante (em alguns casos) e assinatura de um termo de responsabilidade. Nosso objetivo é garantir um lar seguro e amoroso para o animal. Quer saber mais sobre algum passo específico?";
   }
-  if (userText === "onde encontro gatos disponíveis?") {
+  if (userText === "quero adotar um gato") {
     return "Temos muitos gatinhos esperando por um lar! 😻 Você pode conferir os perfis no nosso Instagram @AdotaAiOficial ou entrar em contato com ONGs parceiras como a Gatinhos Felizes. Eles têm fotos e informações sobre cada um.";
   }
 
