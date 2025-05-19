@@ -8,14 +8,19 @@
 <body>
   <div class="container">
     <h1>Oi, eu sou o AdotAÍ!</h1>
-    <p class="subtitle">Sou seu assistente virtual para adoção de animais. Tire dúvidas, saiba como adotar e encontre seu novo amigo de quatro patas!</p>
-    <div class="ask-prompt">Como posso te ajudar hoje? Clique em uma das perguntas ou digite sua dúvida abaixo:</div>
+    <p class="intro-text">Sou seu assistente virtual para adoção de animais. Tire dúvidas, saiba como adotar e encontre seu novo amigo de quatro patas!</p>
+    <p class="cta-text">Como posso te ajudar hoje? Clique em uma das perguntas ou digite sua dúvida abaixo:</p>
+    
     <div class="quick-questions">
-      <button class="quick-btn">Quero adotar um cachorro</button>
-      <button class="quick-btn">Como funciona a adoção?</button>
-      <button class="quick-btn">Onde encontro gatos disponíveis?</button>
+      <button class="quick-btn" data-question="Quero adotar um cachorro">Quero adotar um cachorro</button>
+      <button class="quick-btn" data-question="Como funciona a adoção?">Como funciona a adoção?</button>
+      <button class="quick-btn" data-question="Onde encontro gatos disponíveis?">Onde encontro gatos disponíveis?</button>
     </div>
-    <div id="chatbox" class="chatbox"></div>
+    
+    <div id="chatbox" class="chatbox">
+      <!-- Chat messages will appear here -->
+    </div>
+    
     <div class="input-area">
       <input id="user-input" type="text" placeholder="Digite sua mensagem...">
       <button id="send-btn">Enviar</button>
