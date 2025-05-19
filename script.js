@@ -47,7 +47,7 @@ function getBotReply(userText) {
     return "Até mais! Volte sempre que precisar. 👋";
   }
 
-  return "Desculpe, não entendi muito bem. Poderia perguntar de outra forma? Você pode perguntar sobre como adotar, sobre cães, gatos ou onde encontrá-los. 😉";
+  return "Desculpe, não entendi muito bem. 🐾 Poderia tentar perguntar de outra forma? Você pode perguntar sobre como adotar, sobre cães, gatos ou onde encontrá-los. Clique também nas sugestões acima!😉";
 }
 
 // Handle message sending
@@ -56,12 +56,17 @@ function sendMessage() {
   if (userText === "") return;
 
   addMessage(userText, 'user');
-  userInput.value = ""; // Clear input after sending
+  userInput.value = "";
 
-  // Simulate bot thinking time and then reply
+  sendBtn.disabled = true; 
+  userInput.disabled = true;
+
   setTimeout(() => {
     const botReply = getBotReply(userText);
     addMessage(botReply, 'bot');
+    sendBtn.disabled = false; // REABILITA o botão Enviar
+    userInput.disabled = false; // REABILITA o campo de input
+    userInput.focus();
   }, 500 + Math.random() * 400); // Slight random delay
 
   userInput.focus();
@@ -86,11 +91,22 @@ quickBtns.forEach(button => {
 
     // Option 2: Directly send the question as if user typed it
     addMessage(question, 'user'); // Show the question as user message
-    setTimeout(() => { // Simulate bot reply after a brief pause
+     sendBtn.disabled = true; // DESABILITA o botão Enviar
+    userInput.disabled = true; // DESABILITA o campo de input
+    quickBtns.forEach(btn => btn.disabled = true); // DESABILITA todos os botões rápidos
+
+    setTimeout(() => { 
         const botReply = getBotReply(question);
         addMessage(botReply, 'bot');
+        sendBtn.disabled = false; // REABILITA o botão Enviar
+        userInput.disabled = false; // REABILITA o campo de input
+        quickBtns.forEach(btn => btn.disabled = false); // REABILITA os botões rápidos
+        userInput.focus(); 
     }, 500 + Math.random() * 400);
-    userInput.focus(); // Keep focus on input field
+  });
+});
+    addMessage("Oi! Eu sou o AdotAÍ, seu assistente virtual para adoção de animais. Como posso te ajudar hoje? Você pode clicar em uma das perguntas rápidas ou digitar sua dúvida!", 'bot');
+userInput.focus(); // Coloca o cursor piscando no campo de input automaticamente 
   });
 });
 
