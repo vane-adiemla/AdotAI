@@ -84,30 +84,28 @@ userInput.addEventListener("keydown", function(event) {
 // Handle quick question button clicks
 quickBtns.forEach(button => {
   button.addEventListener('click', () => {
-    const question = button.dataset.question || button.textContent;
-    // Option 1: Populate input and let user send
-    // userInput.value = question;
-    // userInput.focus();
+    if (button.disabled) return; 
 
-    // Option 2: Directly send the question as if user typed it
-    addMessage(question, 'user'); // Show the question as user message
-     sendBtn.disabled = true; // DESABILITA o botão Enviar
-        userInput.disabled = true; // DESABILITA o campo de input
-    quickBtns.forEach(btn => btn.disabled = true); // DESABILITA todos os botões rápidos
+    const question = button.dataset.question || button.textContent;
+    addMessage(question, 'user'); 
+    
+    sendBtn.disabled = true; 
+    userInput.disabled = true; 
+    quickBtns.forEach(btn => btn.disabled = true); 
 
     setTimeout(() => { 
         const botReply = getBotReply(question);
         addMessage(botReply, 'bot');
-        sendBtn.disabled = false; // REABILITA o botão Enviar
-        userInput.disabled = false; // REABILITA o campo de input
-        quickBtns.forEach(btn => btn.disabled = false); // REABILITA os botões rápidos
+        sendBtn.disabled = false; 
+        userInput.disabled = false; 
+        quickBtns.forEach(btn => btn.disabled = false); 
         userInput.focus(); 
     }, 500 + Math.random() * 400);
 
-        addMessage("Oi! Eu sou o AdotAÍ, seu assistente virtual para adoção de animais. Como posso te ajudar hoje? Você pode clicar em uma das perguntas rápidas ou digitar sua dúvida!", 'bot');
-        userInput.focus(); // Coloca o cursor piscando no campo de input automaticamente 
   });
 });
+        addMessage("Oi! Eu sou o AdotAÍ, seu assistente virtual para adoção de animais. Como posso te ajudar hoje? Você pode clicar em uma das perguntas rápidas ou digitar sua dúvida!", 'bot');
+        userInput.focus();
 
 // REMOVED: The initial welcome message from script.js
 // addMessage("Oi! Eu sou o AdotAÍ, seu assistente virtual para adoção de animais. Pergunte o que quiser!", 'bot');
